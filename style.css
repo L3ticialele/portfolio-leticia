@@ -1,0 +1,254 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #ffffff;
+    color: #1a1a2e;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background: #1a1a2e;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav a {
+    color: #7b2cbf;
+    text-decoration: none;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.hero img {
+    width: 250px;
+    border-radius: 50%;
+    border: 4px solid #c77dff;
+}
+
+button {
+    background: #9d4edd;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+section {
+    padding: 100px 40px;
+    text-align: center;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid #e0c3fc;
+    margin: 20px;
+    transition: 0.3s;
+    text-align: left;
+    padding: 25px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 10px 30px rgba(123, 44, 191, 0.2);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition: 0.3s;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 0.6s;
+}
+
+.background-animation {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle, #c77dff 2px, transparent 2px);
+    background-size: 50px 50px;
+    animation: moveBackground 20s linear infinite;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+@keyframes moveBackground {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-50px);
+    }
+}
+
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #ffffff;
+}
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+    }
+
+    .hero {
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 80px;
+    }
+
+    .hero img {
+        width: 180px;
+    }
+
+    section {
+        padding: 60px 20px;
+    }
+
+    .card {
+        margin: 10px 0;
+    }
+
+    video {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 1.8rem;
+        }
+    }
+}
+
+.techs {
+    margin: 10px 0;
+}
+
+.techs span {
+    background: #ede0ff;
+    color: #7b2cbf;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+}
+
+.buttons {
+    margin-top: 15px;
+}
+
+.buttons a {
+    text-decoration: none;
+    background: #9d4edd;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin: 5px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.buttons a:hover {
+    background: #7b2cbf;
+}
+
+.projetos-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.img-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.img-container:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(123, 44, 191, 0.7); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.overlay a {
+  background: white;
+  color: #7b2cbf;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.overlay a:hover {
+  background: #ede0ff;
+}

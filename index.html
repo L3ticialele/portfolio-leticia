@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Letícia Ferreira Pinto</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="background-animation"></div>
+    <div id="particles-js"></div>
+    <header>
+        <nav>
+            <h2>Letícia</h2>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Letícia Ferreira Pinto</h1>
+            <p>Construindo soluções modernas com tecnologia e criatividade</p>
+            <button onclick="scrollToSection('projetos')">Ver projetos</button>
+        </div>
+        <img src="img/fotoPerfil.jpg" alt="Foto de Letícia">
+    </section>
+
+    <section id="sobre" class="hidden">
+        <h2>Sobre mim</h2>
+        <p>
+            Sou estudante de Engenharia de Software com formação técnica em Informática pelo CEFET-MG.
+            Tenho experiência prática com desenvolvimento web e organização de sistemas, além de atuação
+            profissional na área administrativa.
+
+            Atualmente, estou focada em evoluir como desenvolvedora Full Stack, criando aplicações
+            funcionais, bem estruturadas e com foco na experiência do usuário.
+        </p>
+    </section>
+
+    <section id="video" class="hidden">
+        <h2>Conheça mais sobre mim</h2>
+        <video controls width="400">
+            <source src="seu-video.mp4" type="video/mp4">
+            Seu navegador não suporta vídeo.
+        </video>
+    </section>
+
+    <section id="projetos" class="hidden">
+        <h2>Projetos</h2>
+
+        <div class="projetos-container">
+
+            <div class="card">
+
+                <div class="img-container">
+
+                    <img src="img/projeto1.png" alt="Sistema de Reservas">
+
+
+                    <div class="overlay">
+                        <a href="#" target="_blank">Ver projeto</a>
+                    </div>
+                </div>
+
+                <h3>Sistema de Reservas</h3>
+                <p>
+                    Aplicação web completa para gerenciamento de reservas, com autenticação via JWT e controle
+                    de acesso por usuário. Desenvolvida com Node.js e banco de dados relacional, seguindo arquitetura
+                    em camadas (controller e service), garantindo organização, escalabilidade e boas práticas de
+                    desenvolvimento.
+                </p>
+
+                <div class="techs">
+                    <span>Node.js</span>
+                    <span>Express</span>
+                    <span>JWT</span>
+                </div>
+
+                <div class="buttons">
+                    <a href="https://github.com/L3ticialele/court-reservation-system" target="_blank">GitHub</a>
+                </div>
+            </div>
+
+            <div class="card">
+
+                <div class="img-container">
+                    <img src="img/interfaceCUTE.png" alt="Cubesat Telemetry Environment - CUTE">
+
+                    <div class="overlay">
+                        <a href="https://docs.google.com/document/d/1BxNm2dxPEBRjoghL9J0_vd3IugxM6yZLDqTf-7q5otw/edit?usp=sharing"
+                            target="_blank">Ver projeto</a>
+                    </div>
+                </div>
+
+                <h3>Cubesat Telemetry Environment - CUTE</h3>
+                <p>
+                    Sistema de gerenciamento de dados de telemetria de nanossatélites, responsável pela coleta,
+                    organização e visualização das informações transmitidas em tempo real. Desenvolvido com foco
+                    em integridade dos dados e estruturação eficiente para análise.
+                </p>
+
+                <div class="techs">
+                    <span>Java</span>
+                    <span>CSS</span>
+                    <span>C++</span>
+                </div>
+
+                <div class="buttons">
+                    <a href="https://github.com/L3ticialele/cubesat-telemetry-environment" target="_blank">GitHub</a>
+                </div>
+            </div>
+
+            <div class="card">
+
+                <div class="img-container">
+                    <img src="img/" alt="Sistema de gerenciamento de cruzeiro">
+
+                    <div class="overlay">
+                        <a href="#" target="_blank">Ver projeto</a>
+                    </div>
+                </div>
+
+                <h3>Sistema de gerenciamento de cruzeiro</h3>
+                <p>
+                    Aplicação para gerenciamento de cruzeiros, permitindo o controle de passageiros, reservas
+                    e viagens. Estruturado para garantir organização dos dados e facilitar a gestão das operações,
+                    seguindo boas práticas de desenvolvimento.
+                </p>
+
+                <div class="techs">
+                    <span>Java</span>
+                    <span>JPA</span>
+                </div>
+
+                <div class="buttons">
+                    <a href="https://github.com/L3ticialele/cruise-management-system" target="_blank">GitHub</a>
+                </div>
+            </div>
+
+            <div class="card">
+
+                <div class="img-container">
+                    <img src="img/interfaceQuantificacao.png" alt="Quantificação de material óptico">
+
+                    <div class="overlay">
+                        <a href="https://marina-lopes.github.io/quantificacao-de-material-optico/" target="_blank">Ver
+                            projeto</a>
+                    </div>
+                </div>
+
+                <h3>Quantificação de material óptico</h3>
+                <p>
+                    Projeto desenvolvido na disciplina de Redes de Computadores com foco na quantificação de
+                    material óptico, aplicando conceitos técnicos para análise e organização de dados. Destaca
+                    a capacidade de resolver problemas práticos utilizando fundamentos da área.
+                </p>
+
+                <div class="techs">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+
+                <div class="buttons">
+                    <a href="https://github.com/marina-lopes/quantificacao-de-material-optico"
+                        target="_blank">GitHub</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="habilidades" class="hidden">
+        <h2>Habilidades</h2>
+        <ul>
+            <li>Java</li>
+            <li>JavaScript</li>
+            <li>Node.js</li>
+            <li>HTML & CSS</li>
+            <li>Git & GitHub</li>
+        </ul>
+    </section>
+
+    <section id="contato" class="hidden">
+        <h2>Contato</h2>
+        <p>E-mail: <a href="mailto:leticiaferreirapinto5@gmail.com" target="_blank">leticiaferreirapinto5@gmail.com</a></p>
+        <p>Telefone: +55 (31) 99714-0790</p>
+        <p>Linkedin: <a href="https://www.linkedin.com/in/leticiaferreirapinto/" target="_blank">linkedin/leticiaferreirapinto</a></p>
+        <p>GitHub: <a href="https://github.com/L3ticialele" target="_blank">github/L3ticialele</a></p>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>v
