@@ -9,21 +9,23 @@
 </head>
 
 <body>
+    <div class="cursor"></div>
     <div class="background-animation"></div>
     <div id="particles-js"></div>
     <header>
         <nav>
-            <h2>Letícia</h2>
             <ul>
                 <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#experiencia">Experiência</a></li>
                 <li><a href="#projetos">Projetos</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
 
     <section class="hero">
+        <a href="Curriculo_Leticia_Ferreira_Pinto.pdf" target="_blank" class="btn-cv">Baixar Currículo</a>
         <div class="hero-text">
             <h1>Letícia Ferreira Pinto</h1>
             <p>Construindo soluções modernas com tecnologia e criatividade</p>
@@ -34,22 +36,175 @@
 
     <section id="sobre" class="hidden">
         <h2>Sobre mim</h2>
-        <p>
-            Sou estudante de Engenharia de Software com formação técnica em Informática pelo CEFET-MG.
-            Tenho experiência prática com desenvolvimento web e organização de sistemas, além de atuação
-            profissional na área administrativa.
 
-            Atualmente, estou focada em evoluir como desenvolvedora Full Stack, criando aplicações
-            funcionais, bem estruturadas e com foco na experiência do usuário.
-        </p>
+        <div class="sobre-container">
+
+            <div class="sobre-texto">
+                <p>
+                    Sou estudante de Engenharia de Software com formação técnica em Informática,
+                    apaixonada por tecnologia e desenvolvimento de sistemas.
+                </p>
+
+                <p>
+                    Tenho experiência na construção de aplicações web e busco constantemente evoluir
+                    minhas habilidades em programação e boas práticas de desenvolvimento.
+                </p>
+
+                <p>
+                    Já atuei em diferentes áreas, desenvolvendo habilidades como organização,
+                    comunicação e resolução de problemas.
+                </p>
+            </div>
+
+            <div class="sobre-video">
+                <video controls>
+                    <source src="video/apresentacao.mp4" type="video/mp4">
+                    Seu navegador não suporta vídeo.
+                </video>
+            </div>
+
+        </div>
     </section>
 
-    <section id="video" class="hidden">
-        <h2>Conheça mais sobre mim</h2>
-        <video controls width="400">
-            <source src="seu-video.mp4" type="video/mp4">
-            Seu navegador não suporta vídeo.
-        </video>
+    <section id="formacao" class="hidden">
+        <h2>Formação</h2>
+
+        <div class="formacao-container">
+
+            <div class="formacao-card">
+                <div class="card-top"></div>
+
+                <div class="card-header">
+                    <h3>Engenharia de Software</h3>
+                </div>
+
+                <span class="info">
+                    Una • Fevereiro/2025 - Conclusão prevista: Dez/2028
+                </span>
+
+                <p>
+                    Graduação voltada ao desenvolvimento de sistemas, com foco em programação
+                    e boas práticas de engenharia de software.
+                </p>
+
+                <ul>
+                    <li>Desenvolvimento web e aplicações modernas</li>
+                    <li>Inteligência Artificial</li>
+                    <li>Análise de dados</li>
+                </ul>
+
+            </div>
+
+            <div class="formacao-card">
+                <div class="card-top"></div>
+
+                <div class="card-header">
+                    <h3>Técnico em Informática</h3>
+                </div>
+
+                <span class="info">CEFET-MG • Março/2022 - Dezembro/2024</span>
+
+                <p>
+                    Formação técnica com foco em programação, sistemas computacionais
+                    e desenvolvimento de projetos.
+                </p>
+
+                <ul>
+                    <li>Fundamentos de programação</li>
+                    <li>Lógica computacional</li>
+                    <li>Desenvolvimento de projetos técnicos</li>
+                    <li>Base sólida em tecnologia</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+    <section id="experiencia" class="hidden">
+        <h2>Experiência</h2>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <h3>Secretária Escolar</h3>
+                <span>Prefeitura de Contagem • Outubro/2025 - Atual</span>
+                <p>
+                    Experiência na organização de processos administrativos e gestão de informações,
+                    com atuação direta no atendimento ao público e suporte às demandas institucionais.
+                </p>
+
+                <ul>
+                    <li>Organização e controle de documentos acadêmicos</li>
+                    <li>Atendimento a alunos e responsáveis</li>
+                    <li>Suporte às rotinas administrativas da instituição</li>
+                    <li>Gestão e atualização de informações internas</li>
+                </ul>
+            </div>
+
+            <div class="timeline-item">
+                <h3>Auxiliar de E-commerce II</h3>
+                <span>Clicou Shops • Setembro/2025 - Outubro/2025</span>
+                <p>
+                    Atuação no gerenciamento de operações de e-commerce, com foco na organização de produtos
+                    e suporte às demandas da plataforma digital.
+                </p>
+
+                <ul>
+                    <li>Gestão e acompanhamento de pedidos online</li>
+                    <li>Organização e atualização de catálogo de produtos</li>
+                    <li>Suporte às operações da plataforma de e-commerce</li>
+                    <li>Garantia da consistência das informações dos produtos</li>
+                </ul>
+            </div>
+
+            <div class="timeline-item">
+                <h3>Auxiliar de E-commerce I</h3>
+                <span>Clicou Shops • Junho/2025 - Setembro/2025</span>
+                <p>
+                    Apoio nas atividades operacionais do e-commerce, contribuindo para a organização
+                    e funcionamento da plataforma digital.
+                </p>
+
+                <ul>
+                    <li>Cadastro e atualização de produtos</li>
+                    <li>Organização de informações no sistema</li>
+                    <li>Suporte às demandas operacionais da área</li>
+                    <li>Auxílio na manutenção da qualidade dos dados</li>
+                </ul>
+            </div>
+
+            <div class="timeline-item">
+                <h3>Estagiária de Informática</h3>
+                <span>Emanx • Abril/2025 - Junho/2025</span>
+                <p>
+                    Atuação com suporte técnico e apoio na área de informática, auxiliando na resolução
+                    de problemas e organização de recursos tecnológicos.
+                </p>
+
+                <ul>
+                    <li>Suporte técnico a usuários</li>
+                    <li>Auxílio na manutenção de computadores e sistemas</li>
+                    <li>Identificação e resolução de problemas técnicos</li>
+                    <li>Organização de equipamentos e recursos de TI</li>
+                </ul>
+            </div>
+
+            <div class="timeline-item">
+                <h3>Equipe de Competição Aerospace</h3>
+                <span>Aerospace • Março/2024 - Dezembro/2024</span>
+                <p>
+                    Participação em equipe de competição tecnológica voltada ao desenvolvimento de projetos
+                    aeroespaciais, com foco em colaboração e aplicação de conceitos técnicos.
+                </p>
+
+                <ul>
+                    <li>Trabalho em equipe no desenvolvimento de projetos</li>
+                    <li>Aplicação de conceitos técnicos de engenharia</li>
+                    <li>Participação em atividades práticas e experimentais</li>
+                    <li>Colaboração na organização e execução do projeto</li>
+                </ul>
+            </div>
+
+        </div>
     </section>
 
     <section id="projetos" class="hidden">
@@ -179,20 +334,91 @@
 
     <section id="habilidades" class="hidden">
         <h2>Habilidades</h2>
-        <ul>
-            <li>Java</li>
-            <li>JavaScript</li>
-            <li>Node.js</li>
-            <li>HTML & CSS</li>
-            <li>Git & GitHub</li>
-        </ul>
+
+        <div class="skills-container">
+
+            <!-- BACKEND -->
+            <div class="skills-category">
+                <h3>💻 Backend</h3>
+
+                <div class="skill">
+                    <span>APIs REST</span>
+                    <div class="bar">
+                        <div class="progress" data-width="70%"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>Java</span>
+                    <div class="bar">
+                        <div class="progress" data-width="75%"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>JPA</span>
+                    <div class="bar">
+                        <div class="progress" data-width="70%"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>MySQL</span>
+                    <div class="bar">
+                        <div class="progress" data-width="65%"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>Node.js</span>
+                    <div class="bar">
+                        <div class="progress" data-width="65%"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- FRONTEND -->
+            <div class="skills-category">
+                <h3>🌐 Frontend</h3>
+
+                <div class="skill">
+                    <span>HTML & CSS</span>
+                    <div class="bar">
+                        <div class="progress" data-width="90%"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>JavaScript</span>
+                    <div class="bar">
+                        <div class="progress" data-width="70%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FERRAMENTAS -->
+            <div class="skills-category">
+                <h3>🛠️ Ferramentas</h3>
+
+                <div class="skill">
+                    <span>Git & GitHub</span>
+                    <div class="bar">
+                        <div class="progress" data-width="75%"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </section>
 
     <section id="contato" class="hidden">
         <h2>Contato</h2>
-        <p>E-mail: <a href="mailto:leticiaferreirapinto5@gmail.com" target="_blank">leticiaferreirapinto5@gmail.com</a></p>
+        <p>E-mail: <a href="mailto:leticiaferreirapinto5@gmail.com" target="_blank">leticiaferreirapinto5@gmail.com</a>
+        </p>
         <p>Telefone: +55 (31) 99714-0790</p>
-        <p>Linkedin: <a href="https://www.linkedin.com/in/leticiaferreirapinto/" target="_blank">linkedin/leticiaferreirapinto</a></p>
+        <p>Linkedin: <a href="https://www.linkedin.com/in/leticiaferreirapinto/"
+                target="_blank">linkedin/leticiaferreirapinto</a></p>
         <p>GitHub: <a href="https://github.com/L3ticialele" target="_blank">github/L3ticialele</a></p>
 
     </section>

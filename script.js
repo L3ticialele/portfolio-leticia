@@ -51,3 +51,58 @@ particlesJS("particles-js", {
     }
   }
 });
+
+const skills = document.querySelectorAll('.progress');
+
+function animateSkills() {
+  skills.forEach(skill => {
+    const rect = skill.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 50) {
+      skill.style.width = skill.getAttribute('data-width');
+    }
+  });
+}
+
+window.addEventListener('scroll', animateSkills);
+
+function revealOnScroll() {
+  elements.forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 100) {
+      el.classList.add('show');
+    }
+  });
+}
+
+window.addEventListener('scroll', revealOnScroll);
+
+const cursor = document.querySelector('.cursor');
+
+document.addEventListener('mousemove', e => {
+  cursor.style.top = e.clientY + 'px';
+  cursor.style.left = e.clientX + 'px';
+});
+
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll("nav a");
+
+window.addEventListener("scroll", () => {
+  let current = "";
+
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop - 120;
+    const sectionHeight = section.clientHeight;
+
+    if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  navLinks.forEach(link => {
+    link.classList.remove("active");
+
+    if (link.getAttribute("href") === `#${current}`) {
+      link.classList.add("active");
+    }
+  });
+});
