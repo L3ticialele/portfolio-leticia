@@ -10,7 +10,7 @@ I am a Software Engineering student with a technical background in IT, passionat
 
 👉 https://l3ticialele.github.io/portfolio-leticia/
 
-![Portfolio Preview](images/portifolio.png)
+![Portfolio Preview](img/portifolio.png)
 
 ---
 
