@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Letícia Ferreira Pinto</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/icone.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -411,20 +412,35 @@
 
         </div>
     </section>
+    <div id="chat-toggle">💬</div>
+    <div id="chat-widget">
+        <div class="chat-header">
+            <span>Pergunte sobre mim</span>
+            <button onclick="toggleChat()">✖</button>
+        </div>
 
-    <section id="contato" class="hidden">
-        <h2>Contato</h2>
-        <p>E-mail: <a href="mailto:leticiaferreirapinto5@gmail.com" target="_blank">leticiaferreirapinto5@gmail.com</a>
-        </p>
-        <p>Telefone: +55 (31) 99714-0790</p>
-        <p>Linkedin: <a href="https://www.linkedin.com/in/leticiaferreirapinto/"
-                target="_blank">linkedin/leticiaferreirapinto</a></p>
-        <p>GitHub: <a href="https://github.com/L3ticialele" target="_blank">github/L3ticialele</a></p>
+        <div id="chat-box"></div>
 
-    </section>
-
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Ask me something..." />
+            <button onclick="sendMessage()">Enviar</button>
+        </div>
+    </div>
+    <footer>
+        <nav>
+            <ul>
+                <li>E-mail: <a href="mailto:leticiaferreirapinto5@gmail.com"
+                        target="_blank">leticiaferreirapinto5@gmail.com</a></li>
+                <li>Telefone: <a href="#contato">+55 (31) 99714-0790</a></li>
+                <li>Linkedin: <a href="https://www.linkedin.com/in/leticiaferreirapinto/"
+                        target="_blank">linkedin/leticiaferreirapinto</a></li>
+                <li>GitHub: <a href="https://github.com/L3ticialele" target="_blank">github/L3ticialele</a></li>
+            </ul>
+        </nav>
+    </footer>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/chat.js"></script>
 </body>
 
-</html>v
+</html>
